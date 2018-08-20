@@ -17,9 +17,7 @@ Block = namedtuple(
      'proof',
      'previous_hash',
      'hash',
-     'transactions'
-     ]
-)
+     'transactions'])
 
 
 def get_hash(unhashed):
@@ -48,7 +46,6 @@ class BlockChain(list):
         return self[-1].transactions + new
 
     def next_block(self, new_transactions, proof):
-
         last_block = self[-1]
         next_block = OrderedDict(
             {'index': len(self) + 1,

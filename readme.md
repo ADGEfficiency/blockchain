@@ -20,3 +20,5 @@ $ cd blockchain
 
 $ python main.py
 ```
+
+![](https://www.adgefficiency.com/assets/blockchain_python/fig1.png)
