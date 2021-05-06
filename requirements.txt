@@ -58,7 +58,7 @@ fastcache==1.0.2
 filelock==2.0.12
 flake8==3.5.0
 Flask==0.12.2
-Flask-Cors==3.0.3
+Flask-Cors==3.0.9
 forecast==0.0.1
 future==0.16.0
 gevent==1.2.2
