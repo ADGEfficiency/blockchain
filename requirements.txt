@@ -37,7 +37,7 @@ conda==4.3.30
 conda-build==3.0.27
 conda-verify==2.0.0
 contextlib2==0.5.5
-cookiecutter==1.6.0
+cookiecutter==2.1.1
 crypto==1.4.1
 cryptography==2.0.3
 cycler==0.10.0
