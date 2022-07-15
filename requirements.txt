@@ -46,7 +46,7 @@ cytoolz==0.8.2
 dask==0.15.3
 datashape==0.5.4
 decorator==4.3.0
-distributed==1.19.1
+distributed==2021.10.0
 docutils==0.14
 elasticsearch==6.1.1
 elasticsearch-dsl==6.1.0
