@@ -103,7 +103,7 @@ msgpack-python==0.4.8
 multipledispatch==0.4.9
 Naked==0.1.31
 navigator-updater==0.1.0
-nbconvert==5.3.1
+nbconvert==6.3.0
 nbformat==4.4.0
 netifaces==0.10.6
 networkx==2.0
