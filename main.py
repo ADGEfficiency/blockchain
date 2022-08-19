@@ -1,6 +1,7 @@
 from collections import defaultdict
 
 import numpy as np
+from rich import print
 
 from network import Node, Network
 

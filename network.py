@@ -1,6 +1,8 @@
 import binascii
 from time import sleep
 
+from rich import print
+
 from Crypto.Hash import SHA
 from Crypto.PublicKey import RSA
 from Crypto.Signature import PKCS1_v1_5
@@ -83,18 +85,18 @@ class Network(list):
 
         validated = []
         for transaction in new_transactions:
-            print('processing to:{} sender:{} amount:{}'.format(
+            print(' [yellow]processing[/] to {} from {} amount {}'.format(
                 transaction.to, transaction.sender, transaction.amount))
 
             amount = float(transaction.amount)
             new_bal = balances[transaction.sender] - amount
 
             if new_bal < self.overdraft_limit:
-                print('rejected - {} overdrawn with bal of {}'.format(
+                print('[red] rejected[/] - {} overdrawn with balanace of [red]{}[/]'.format(
                     transaction.sender, new_bal))
 
             else:
-                print('accepted')
+                print('[green] accepted[/]')
                 balances[transaction.sender] -= amount
                 balances[transaction.to] += amount
                 validated.append(transaction)
